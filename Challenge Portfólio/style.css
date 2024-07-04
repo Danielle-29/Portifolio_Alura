@@ -1,0 +1,333 @@
+:root{
+
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #45b8b4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    gap: 8px;    
+    margin-left: 3%;
+}
+
+header > .estrela{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+       }
+
+.links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+
+.links li{
+        display: inline-block;  
+  }
+
+.links .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+/*Sessão Title*/
+
+.title{
+    display: flex;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 88%;
+    justify-content: space-between;
+}
+
+.principal {
+    font-weight: 700;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    width: 75vh;
+}
+
+.icone__item {
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.foto {
+    width: 12%;
+    height: 12%;
+    border-radius: 100%;
+    margin-left: 3px;
+    
+}
+
+.icone {
+    display: flex;
+    gap: 2rem;
+    margin-left: -2.5rem;
+    justify-content: flex-start;
+}
+
+/*Sessão About*/
+
+section.about{
+    background-color: #45b8b4;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h3.about__title  {
+    width: 166px;
+    height: 38px;
+    margin-left: 3.5%;
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.sobre {
+    font-family: 'Amatic sc', sans-serif;
+    margin-left: 3.5%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 19px;
+
+}
+
+/*Sessão Skills*/
+
+#skills {
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills__img img {
+    width: 30px;
+    margin: 10% 0;
+}
+
+.skills__box {
+    background: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #000000;
+}
+
+li.skills__name {
+    font-family: 'Amatic sc', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.hobbies__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hobbies__box {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.hobbies__box ul {
+    position: absolute;
+    bottom: .5rem;
+    margin-left: -2rem;
+}
+
+/* Experiência Acadêmica*/
+
+section.academic {
+
+    background-color: var(--cor-de-fundo-azul);
+}
+
+section .academic__container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding-default);
+    margin: var(--margin-default);
+
+}
+
+section .academic__title {
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .academic__courses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.academic__courses__item__img {
+    width: 200px;
+    height: 200px;
+}
+
+/* experiência*/
+
+section.experience{
+    display: flex;
+    padding: 2rem;
+    align-items: center;    
+    justify-content: center;
+}
+
+.experience__section__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.experiencie__box {
+    margin-left: 10%;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0px 4px 4px #0c0c0c;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.experience__img {
+    width: 500px;
+    height: 350px;
+}
+
+.experiencia__botao--repo, .experiencia__botao--demo {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.experiencia__botao--demo:hover {
+    color:#45b8b4;
+    transition: 2s;
+    background-color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.experiencia__botao--repo:hover {
+    color:#45b8b4;
+    transition: 2s;
+    background-color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*footer*/
+
+.footer {
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #45b8b4;
+    height: 50px;
+}
+
+.footer__rodape p {
+    margin: .5rem;
+    font-weight: bold;
+}
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+.nav :hover{
+color:#45b8b4;
+transition: 2s;
+background-color: #000;
+border-radius: 5px;
+cursor: pointer;
+
+}
